@@ -1,19 +1,20 @@
 :root {
   --primary: #d81e5b;
   --secondary: #8c38ff;
-  --dark: #131a26;
-  --light: #f5f5f5;
+  --dark: #111010;
+  --light: #090808;
 }
  
 * {
-  margin: 0;
-  padding: 0;
+  margin: 1px;
+  padding: 10px;
   box-sizing: border-box;
   font-family: 'Fira Sans', sans-serif;
 }
 
 body {
-  background-color: var(--light);
+  background-color: var(--dark);
+  background-image: url(https://www.wellesley.edu/sites/default/files/styles/news_refresh_hero/public/assets/dailyshot/ds_461390782.jpg?itok=jr0Buv1t);
 }
 
 .App {
@@ -24,11 +25,11 @@ body {
   padding: 16px;
 }
 
-.calculator {
-  width: 100%;
-  max-width: 400px;
-  background-color: #fff;
-  border-radius: 16px;
+.calculadora {
+  width: 500px;
+  max-width: 800px;
+  background-color: rgb(5, 5, 5);
+  border-radius: 30px;
   overflow: hidden;
   box-shadow: 0px 2px 64px rgba(0, 0, 0, 0.2);
 }
@@ -36,15 +37,16 @@ body {
 .display {
   padding: 16px;
   text-align: right;
-  background-color: var(--dark);
+  background-color: #ffffff;
   color: var(--light);
   font-size: 24px;
   font-weight: bold;
+  border-radius: 20px;
 }
 
 .display span {
   font-size: 14px;
-  color: #888;
+  color: rgb(255, 255, 255);
 }
 
 button:hover {
@@ -58,17 +60,22 @@ button:hover {
 }
 .operators button {
   flex: 1 1 0%;
-  background-color: var(--primary);
+  background-color: #ffffff;
   font-weight: 700;
+  border-radius: 20px;
 }
 
 .digitos {
   display: flex;
   flex-wrap: wrap;
+  background-color: #0c0c0c;
+  font-size: 24px;
+  border-radius: 20px;
 }
 
 .digitos button {
   flex: 1 1 33.333%;
-  max-width: 33.333%;
-  background-color: var(--dark);
+  max-width: 50%;
+  background-color: #ffffff;
+  border-radius: 20px;
 }
